@@ -60,6 +60,7 @@
           , terminal = "alacritty" }
           `additionalKeys`
           [ ( (mod4Mask,xK_p), spawn "rofi -show run" )
+          , ( (mod4Mask,xK_o), spawn "rofi -show drun -show-icons" )
           ]
       '';
       enableContribAndExtras = true;
@@ -172,7 +173,9 @@
   #   enable = true;
   #   enableSSHSupport = true;
   # };
- 
+
+programs.thunar.enable = true;
+
   # List services that you want to enable:
  
   # Enable the OpenSSH daemon.
