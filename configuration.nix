@@ -48,6 +48,9 @@
  
 # Enable the XFCE + XMONAD desktop
   services.xserver = {
+    xautolock = {
+      enable = false;
+    };
     displayManager.defaultSession = "xfce+xmonad";
     windowManager.xmonad = {
       enable = true;
